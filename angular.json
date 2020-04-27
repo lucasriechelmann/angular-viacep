@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "TesteCep"
+    }
+  },
+  "defaultProject": "TesteCep",
+  "cli": {
+    "analytics": "dfbaf423-284f-484d-a1f1-cba84ae0bf8f"
+  }
 }

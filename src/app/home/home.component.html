@@ -1,0 +1,27 @@
+<div class="jumbotron">
+  <div class="container">
+    <h2>CEP</h2>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <form class="col-sm-12 mb-4" [formGroup]="myForm" (ngSubmit)="search()">
+      <div class="form-group">
+        <label for="cep">Cep</label>
+        <input type="text" class="form-control" id="cep" placeholder="Insira o Cep" formControlName="cepSearch"/>
+      </div>
+      <button type="submit" class="btn btn-primary">Pesquisar</button>
+    </form>
+    <ul class="col-sm-12 list-group mb-4">
+      <li class="list-group-item">Cep: {{cep.cep}}</li>
+      <li class="list-group-item">Logradouro: {{cep.logradouro}}</li>
+      <li class="list-group-item">Complemento: {{cep.complemento}}</li>
+      <li class="list-group-item">Bairro: {{cep.bairro}}</li>
+      <li class="list-group-item">Localidade: {{cep.localidade}}</li>
+      <li class="list-group-item">UF: {{cep.uf}}</li>
+      <li class="list-group-item">Unidade: {{cep.unidade}}</li>
+      <li class="list-group-item">Ibge: {{cep.ibge}}</li>
+      <li class="list-group-item">Gia: {{cep.gia}}</li>
+    </ul>
+  </div>
+</div>
